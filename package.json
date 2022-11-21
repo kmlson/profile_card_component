@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --no-source-map --watch src/sass:src/css"
+    "sass": "sass --no-source-map --watch sass:css"
   },
   "author": "kmlson",
   "license": "MIT",

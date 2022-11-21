@@ -1,0 +1,79 @@
+.container {
+   
+    height:$mobileHeight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $DarkCyan;
+    
+}
+
+
+
+.card {
+    width: $card_mobileWidth;
+    height: $card_mobileHeight;
+    border-radius: 5%;
+    background-color: white;
+    position: relative;
+
+}
+
+.image {
+   
+    position: relative;
+    top:-50px;
+    left: 115px;
+    z-index: 100;
+    border: 5px solid white;
+    border-radius: 50%;
+
+}
+
+.header {
+        background-image: url("/images/bg-pattern-card.svg");
+        width: 326px;
+        height: 140px;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+}
+
+.details {
+    text-align: center;
+    position: relative;
+    top:-30px;
+    div:not(:last-child) {
+        display: inline;
+    }
+    .name {
+      font-size: 18px;
+      font-weight: 700; 
+    }
+    .age {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .location {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
+
+.line {
+    border-top: 0.2px solid $DarkGray;
+    margin-bottom: 20px;
+ 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+
+
+  
+  
