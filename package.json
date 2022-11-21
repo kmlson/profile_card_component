@@ -1,0 +1,14 @@
+{
+  "name": "profilecardcomponent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --no-source-map --watch src/sass:src/css"
+  },
+  "author": "kmlson",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
