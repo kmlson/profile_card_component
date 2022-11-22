@@ -1,10 +1,13 @@
 .container {
-   
+  
     height:$mobileHeight;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $DarkCyan;
+    position: relative;
+    
+    
     
 }
 
@@ -36,10 +39,11 @@
     background-image: url("./images/bg-pattern-top.svg");
         width: 978px;
         height: 978px; 
-        position: absolute;
+        position:absolute;
         z-index: 10;
         top:-569px;
         left:-766px;
+       
 }
 
 .bottom {
@@ -50,9 +54,9 @@
         z-index: 10;
        top:334px;
        left: 100px;
+      
 }
 .header {
-        background-image: url("./images/bg-pattern-card.svg");
         width: 326px;
         height: 140px;
         border-top-left-radius: 5%;
@@ -112,6 +116,8 @@
 
 
 @media screen and (min-width: 768px) {
+
+   
 
     .card {
         width: $card_desktopWidth;
