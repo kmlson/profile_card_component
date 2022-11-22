@@ -16,4 +16,5 @@
 
 .prettierignore
 details
+design
 node_modules
