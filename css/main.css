@@ -23,6 +23,7 @@ body {
   border-radius: 5%;
   background-color: white;
   position: relative;
+  z-index: 20;
 }
 
 .image {
@@ -32,6 +33,26 @@ body {
   z-index: 100;
   border: 5px solid white;
   border-radius: 50%;
+}
+
+.top {
+  background-image: url("/images/bg-pattern-top.svg");
+  width: 978px;
+  height: 978px;
+  position: absolute;
+  z-index: 10;
+  top: -569px;
+  left: -766px;
+}
+
+.bottom {
+  background-image: url("/images/bg-pattern-bottom.svg");
+  width: 978px;
+  height: 978px;
+  position: absolute;
+  z-index: 10;
+  top: 334px;
+  left: 100px;
 }
 
 .header {
@@ -57,11 +78,13 @@ body {
 .details .age {
   font-size: 18px;
   font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
 }
 .details .location {
   padding-top: 10px;
   font-size: 14px;
   font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
 }
 
 .line {
@@ -71,5 +94,42 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.footer .quantity {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer .desc {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 350px;
+    height: 374px;
+  }
+  .top {
+    z-index: 10;
+    top: -569px;
+    left: -255px;
+  }
+  .bottom {
+    z-index: 10;
+    top: 334px;
+    left: 700px;
+  }
+  .header {
+    width: 350px;
+    height: 140px;
+  }
+  .image {
+    top: -50px;
+    left: 120px;
+    border: 7px solid white;
+  }
 }

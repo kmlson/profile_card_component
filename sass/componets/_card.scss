@@ -16,8 +16,10 @@
     border-radius: 5%;
     background-color: white;
     position: relative;
+    z-index: 20;
 
 }
+
 
 .image {
    
@@ -30,6 +32,25 @@
 
 }
 
+.top {
+    background-image: url("/images/bg-pattern-top.svg");
+        width: 978px;
+        height: 978px; 
+        position: absolute;
+        z-index: 10;
+        top:-569px;
+        left:-766px;
+}
+
+.bottom {
+    background-image: url("/images/bg-pattern-bottom.svg");
+        width: 978px;
+        height: 978px; 
+        position: absolute;
+        z-index: 10;
+       top:334px;
+       left: 100px;
+}
 .header {
         background-image: url("/images/bg-pattern-card.svg");
         width: 326px;
@@ -52,11 +73,13 @@
     .age {
         font-size: 18px;
         font-weight: 400;
+        color: $DarkGray;
     }
     .location {
         padding-top: 10px;
         font-size: 14px;
         font-weight: 400;
+        color: $DarkGray;
     }
 
 }
@@ -69,9 +92,61 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    .quantity {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700; 
+        
+    }
+    .desc {
+       text-align: center;
+        font-size: 10px;
+        font-weight: 400;
+        color: $DarkGray;
+
+    }
    
     
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .card {
+        width: $card_desktopWidth;
+        height: $card_desktopHeight;
+    
+    }
+    .top {
+    
+            z-index: 10;
+            top:-569px;
+            left:-255px;
+    }
+    
+    .bottom {
+        
+            z-index: 10;
+           top:334px;
+           left: 700px;
+    }
+
+    .header {
+        width: 350px;
+        height: 140px;
+     }
+     .image {
+   
+       
+        top:-50px;
+        left: 120px;
+    
+        border: 7px solid white;
+       
+    
+    }
+
 }
 
 
